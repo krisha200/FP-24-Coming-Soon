@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+         .swiper-container
+ {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+ }
+
+ .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+ }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960294/Gallery%20Section%20Coming%20Soon%2723/Jasleen_Royal_nlwvns.jpg);"></div>
+          <div class="swiper-slide"  style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960215/Gallery%20Section%20Coming%20Soon%2723/Pawan_Agarwal_shmmm4.jpg);"></div>
+          <div class="swiper-slide"  style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960218/Gallery%20Section%20Coming%20Soon%2723/Burnout_e6cqzt.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664009661/Gallery%20Section%20Coming%20Soon%2723/FSR-gallery-changed_jgyhjc.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960216/Gallery%20Section%20Coming%20Soon%2723/Smack_p59im9.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663961569/Gallery%20Section%20Coming%20Soon%2723/Deco_hisrcz.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663962455/Gallery%20Section%20Coming%20Soon%2723/Quest_mzgszb.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960058/Gallery%20Section%20Coming%20Soon%2723/Beat_Cracker_auqvjn.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664268043/Gallery%20Section%20Coming%20Soon%2723/Jampad_f4edla.jpg);"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script>
+        var swiper=new Swiper('.swiper-container',{
+  pagination:'.swiper-pagination',
+  effect: 'coverflow',
+  grabCursor: true,
+  slidesPerView: 'auto',
+  coverflow:{
+    rotate: 20,
+    stretch:0,
+    depth: 200,
+    modifier:1,
+    slideShadows : true,
+  },
+  loop: true,
+})
+      </script>
+</body>
+</html>

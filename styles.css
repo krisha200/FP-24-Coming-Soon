@@ -1,0 +1,253 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(185, 57%, 78%);
+  --first-color-light: hsl(0, 0%, 100%);
+  --black-color: rgb(0, 0, 0);
+  --text-color: hsl(0, 0%, 100%);
+  --body-color: hsl(29, 100%, 99%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: .75rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+body{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.containerweb {
+  /* height: 100vh; */
+  /* margin-inline: 1.5rem; */
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 132, 156, 0.326)  );
+}
+
+.cardweb {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: hsla(0, 0%, 7%, 0.511);;
+  padding: 1.25rem 2rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px hsla(29, 75%, 8%, 0.2);
+  margin: 1rem;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 cards in each row */
+    gap: 1.5rem; /* Adjust the gap as needed */
+    padding: 1rem;
+    margin: 1rem;
+  }
+.card__img {
+  width: 150px;
+  border-radius: 50%;
+}
+.card__border {
+  width: 170px;
+  height: 170px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.75rem;
+}
+.card__name {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+}
+.card__profession {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+.card__social {
+  width: 200px;
+  background-color: var(--first-color);
+  padding: 0.75rem;
+  border-radius: 3rem;
+  text-align: initial;
+  box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  transform-origin: 18px 17px;
+}
+.card__social-control {
+  position: relative;
+  transform-origin: 18px 18px;
+  transition: transform 0.45s ease;
+  transform: rotate(0);
+}
+.card__social-toggle {
+  display: inline-flex;
+  background-color: var(--black-color);
+  color: var(--first-color);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+.card__social-text {
+  display: block;
+  color: var(--black-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+.card__social-list {
+  display: inline-flex;
+  column-gap: 0.75rem;
+  transform: rotate(135deg);
+  transform-origin: 18px 17px;
+}
+.card__social-link {
+  display: inline-flex;
+  background-color: var(--first-color-light);
+  color: var(--black-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  border-radius: 50%;
+}
+.card__social-text, .card__social-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 3.1rem;
+}
+.card__social-text {
+  top: 0.5rem;
+}
+
+/* Rotate social */
+.animation .card__social-control {
+  transform: rotate(-135deg);
+}
+
+/* Up animation */
+.card__social.animation {
+  animation: up-animation 1s ease-in-out forwards;
+}
+
+@keyframes up-animation {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50%, 60% {
+    transform: rotate(-3deg);
+  }
+  88% {
+    transform: rotate(1deg);
+  }
+}
+/* Down animation */
+.card__social.down-animation {
+  animation: down-animation 1s ease-in-out forwards;
+}
+
+@keyframes down-animation {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  50%, 60% {
+    transform: rotate(6deg);
+  }
+  88% {
+    transform: rotate(-1deg);
+  }
+}
+
+/* header */
+/* ... Your existing CSS ... */
+
+/* Add this CSS for the header animation */
+.header {
+    text-align: center;
+    position: relative;
+    margin-top: 50px; /* Adjust the margin as needed */
+    opacity: 0; /* Initially set the opacity to 0 */
+    animation: slide-up 1s ease-in-out forwards; /* Slide-up animation */
+  }
+  
+  .header__title {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: var(--first-color); /* Use your desired color */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(-20px); /* Start position */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* End position */
+      opacity: 1;
+    }
+  }
+/* motion   */
+/* ... Your existing CSS ... */
+
+/* Add this CSS for the motion effect */
+.motion-card {
+    transition: transform 0.2s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  .motion-card:hover {
+    transform: translate(10px, -10px); /* Adjust the values as needed */
+  }
+  /* Add this media query for smaller screens */
+@media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in each row for screens smaller than 768px */
+    }
+  
+    .cardweb {
+      width: 100%; /* Make the cards full width for smaller screens */
+      margin: 1rem 0; /* Adjust the margin as needed */
+    }
+  }
+  
+  /* Add this media query for even smaller screens */
+  @media (max-width: 480px) {
+    .card-grid {
+      grid-template-columns: 1fr; /* 1 card in each row for screens smaller than 480px */
+    }
+  }
+  
