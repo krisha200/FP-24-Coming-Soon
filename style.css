@@ -403,9 +403,9 @@ nav .fa-solid {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #03272a32;
+    background: #1c3c5575;
     /* background: rgba(0, 2, 29, 0.888); */
-    box-shadow: 0 0 10px rgb(138, 138, 138);
+    box-shadow: 0 0 10px rgb(134, 134, 134);
     /* backdrop-filter: blur(150px); */
     /* border: 3px solid rgba(87, 87, 87, 0.5) ; */
     /* box-shadow: 10px 10px 10px 3px rgba(88, 93, 96, 0.7); */
@@ -503,7 +503,7 @@ nav .fa-solid {
     background-size: cover;
     width: 300px;
     height: 435px;
-    background: #d1ebff;
+    background: #1c3c5588;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     filter: blur(0px);
     border-radius: 5px;
@@ -511,15 +511,17 @@ nav .fa-solid {
     flex-direction: column;
     padding: 20px;
     justify-content: space-between; /* Added to push content to the top and image/names to the bottom */
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.502);
   }
   
   .swiper-slide-active {
     filter: blur(0px);
-    background: #fff;
+    background: rgba(61, 90, 120, 0.468);
+    box-shadow: 0 0 10px 10px rgba(6, 37, 57, 0.502)
   }
   
   .testimonialBox {
-    color: #999;
+    color: #f2efef;
     
   }
   
@@ -567,7 +569,7 @@ nav .fa-solid {
   
   .testimonialBox .details h3 span {
     font-size: 12px;
-    color: #666;
+    color: #f2efef;
   }
   
   /* Adjusted progress bar position */
@@ -1380,9 +1382,6 @@ a{
 .swiper-slide_2 img {
     height: 150px;
     width: 250px;
-    /* border-radius: 10%; */
-
-    /* background-color: #000; */
 }
 
 .sw h4 {
