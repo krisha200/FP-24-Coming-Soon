@@ -70,7 +70,8 @@ canvas {
     /* background: linear-gradient(#0d0538, rgb(0, 0, 0),#5e102785); */
     /* background: linear-gradient(rgba(15, 3, 69, 0.5), rgba(110, 21, 73, 0.6)  ); */
     /* background: linear-gradient( rgba(16, 7, 58, 0.664),  rgba(136, 37, 96, 0.5) -5.91%, rgba(15, 3, 69, 0.5) 111.58%); */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 132, 156, 0.326)  );
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 132, 156, 0.326)  ); */
+    background: linear-gradient(rgba(0, 0, 0, 0.813), rgba(0, 48, 72, 0.692)  );
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 22, 151, 0.591)  ); */
     /* background: black; */
     position: fixed;
