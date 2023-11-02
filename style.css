@@ -220,6 +220,15 @@ nav .fa-solid {
     }
 }
 
+.tb_gif{
+    position: absolute;
+    top: 10px;
+    /* visibility: hidden; */
+}
+
+.content_main{
+    text-align: justify;
+}
 /* Coming soon text */
 #home {
     text-align: center; /* Center align content */
