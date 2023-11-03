@@ -1,5 +1,5 @@
 var speed = 0.5; //speed of particle movement
-var noofparticles = 900; //number of particles
+var noofparticles = 1200; //number of particles
 var sizeofparticles = 25; //size of particle
 var speedcam = 1; //speed of camera movement..set to ZERO for NO CAMERA MOVEMENT
 var flagcam = 0;
