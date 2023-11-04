@@ -69,15 +69,18 @@ img {
     margin: 1rem;
   }
 .card__img {
-  width: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  
 }
 .card__border {
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
   border: 2px solid var(--first-color);
   border-radius: 50%;
   display: grid;
+  overflow: hidden;
   place-items: center;
   margin: 0 auto 0.75rem;
 }
@@ -92,7 +95,7 @@ img {
   font-weight: 500;
 }
 .card__social {
-  width: 200px;
+  width: 170px;
   background-color: var(--first-color);
   padding: 0.75rem;
   border-radius: 3rem;
@@ -101,7 +104,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1.75rem;
+  bottom: -2.55rem;
   margin: 0 auto;
   overflow: hidden;
   transform-origin: 18px 17px;

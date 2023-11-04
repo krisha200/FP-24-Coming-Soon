@@ -183,7 +183,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media(max-width: 970px) {
+@media screen and (max-width: 970px) {
 
     .nav-links ul li {
         display: block;
@@ -191,7 +191,7 @@ nav .fa-solid {
     }
 
     .nav-links ul li a {
-        color: #38B4AB;
+        color: rgb(206, 231, 255);
         text-decoration: none;
         font-size: 13px;
     }
@@ -213,7 +213,7 @@ nav .fa-solid {
 
     nav .fa-solid {
         display: block;
-        color: #38B4AB;
+        color: rgb(206, 231, 255);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -253,21 +253,20 @@ nav .fa-solid {
   }
   
   .small-gif {
-    width: 600px; /* Set the desired width */
-    height: auto; /* To maintain the aspect ratio */
-    /* You can adjust the width to your desired size */
+    max-width: 60%; /* Ensure the image scales down to fit its container */
+    height: auto; /* Maintain the aspect ratio of the image */
   }
   @media screen and (max-width: 767px) {
       
     .small-gif {
-         width: 350px; /*Set the desired width */
+         width: 100%; /*Set the desired width */
         /* height: auto; To maintain the aspect ratio */
         /* You can adjust the width to your desired size */
       }
       .think-beyond{
         /* margin-top: -4rem !important; */
         height: auto;
-        width: 70px !important;
+        width: 100% !important;
       }
     
 }
@@ -502,8 +501,10 @@ nav .fa-solid {
           margin: 20px 0; /* Adjust margin as needed */
         }
       }
-      
-    
+}
+
+#head-testimonial{
+    margin-bottom: 3rem;
 }
 
 /* testi */
@@ -1469,11 +1470,6 @@ a{
     border: 5px solid #31585e;
 }
 
-.div_header_sponsor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .sponsor_header {
     font-size: 2.25rem;
@@ -1491,6 +1487,13 @@ a{
 /* -------------------------------------------------------- */
 
 /* Slider : InBuilt class  || Warning : Do not Modify!! */
+.div_header_sponsor {
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+  
+}
+
 
 .slick-slider {
     position: relative;
@@ -1841,25 +1844,9 @@ a{
     font-size: 2.3rem;
     letter-spacing: 3px;
     position: relative;
+    border-bottom:2px solid #b6dbf5 ;
 }
 
-.gallery_header::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    border-bottom: 2px solid #b6dbf5;
-    transition: width 0.3s;
-}
-
-.gallery_header:hover::before {
-    width: 100%;
-}
-.gallery_header:hover::after {
-    width: 100%;
-}
 
 .div_achivments_text{
     justify-content:center !important;
@@ -2105,7 +2092,7 @@ a{
     /* Home page MQ */
 
     #home {
-        height: 55vh;
+        height: 35vh;
     }
 
     .header-img {
