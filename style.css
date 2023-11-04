@@ -735,6 +735,7 @@ iframe {
     overflow: hidden;
     position: relative;
     margin: 1rem;
+    margin-top: 2rem;
     width: 18.75rem;
 }
 
